@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: stremio-titrari-ro
+    name: titrari-ro
     env: node
     buildCommand: npm install
     startCommand: node server.js
@@ -8,6 +8,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: RENDER_EXTERNAL_URL
-        value: https://stremio-titrari-ro.onrender.com
+        value: https://titrari-ro-grok.onrender.com  # schimbă cu URL-ul tău real
     healthCheckPath: /health
     autoDeploy: true
